@@ -5,6 +5,7 @@
   ],
   "description": "Onyx common angular code",
   "main": [
+    "./onyx-common.js",
     "./logout.service.js",
     "./nx-api.service.js",
     "./nx-common.service.js"

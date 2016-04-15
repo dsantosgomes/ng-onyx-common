@@ -1,9 +1,7 @@
 (function () {
     'use strict';
 
-    angular
-        .module('onyxCommon',[])
-        .factory('NxCommon', NxCommon);
+    angular.module('onyxCommon').service('NxCommon', NxCommon);
 
     /** @ngInject */
     function NxCommon($http, appConfig) { // jshint ignore:line

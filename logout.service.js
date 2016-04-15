@@ -1,9 +1,7 @@
 (function () {
   'use strict';
 
-  angular
-    .module('onyxCommon')
-    .factory('LogoutService', LogoutService);
+  angular.module('onyxCommon').service('LogoutService', LogoutService);
 
   /** @ngInject */
   function LogoutService($http, appConfig) { // jshint ignore:line

@@ -1,7 +1,7 @@
 (function() {
 	'use strict';
 
-	angular.module('onyxCommon').factory('NxApiService', NxApiService);
+	angular.module('onyxCommon').service('NxApiService', NxApiService);
 
 	/** @ngInject */
 	function NxApiService($http, $q, $location, appConfig, APP_CONSTANT) { // jshint
