@@ -1,0 +1,25 @@
+{
+  "name": "ng-onyx-common",
+  "authors": [
+    "Daniel Santos <dsantos@wpsnetwork.com>"
+  ],
+  "description": "Onyx common angular code",
+  "main": [
+    "./logout.service.js",
+    "./nx-api.service.js",
+    "./nx-common.service.js"
+  ],
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
