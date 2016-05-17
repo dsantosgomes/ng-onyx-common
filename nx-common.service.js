@@ -30,7 +30,7 @@
 
         service.setAuthToken = function () {
             appConfig.TOKEN = service.getAuthToken();
-            if (!appConfig.TOKEN){
+            if (!appConfig.TOKEN) {
                 return false;
             } else {
                 return true;
@@ -39,9 +39,9 @@
         };
 
         // Validates that the input string is a valid date formatted as "mm/dd/yyyy"
-        service.isValidDate = function(dateString) {
+        service.isValidDate = function (dateString) {
             // First check for the pattern
-            if(!/^\d{1,2}\/\d{1,2}\/\d{4}$/.test(dateString))
+            if (!/^\d{1,2}\/\d{1,2}\/\d{4}$/.test(dateString))
                 return false;
 
             // Parse the date parts to integers
@@ -51,13 +51,13 @@
             var year = parseInt(parts[2], 10);
 
             // Check the ranges of month and year
-            if(year < 1000 || year > 3000 || month === 0 || month > 12)
+            if (year < 1000 || year > 3000 || month === 0 || month > 12)
                 return false;
 
-            var monthLength = [ 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 ];
+            var monthLength = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
             // Adjust for leap years
-            if(year % 400 === 0 || (year % 100 !== 0 && year % 4 === 0))
+            if (year % 400 === 0 || (year % 100 !== 0 && year % 4 === 0))
                 monthLength[1] = 29;
 
             // Check the range of the day
