@@ -3,5 +3,5 @@
  */
 (function () {
     'use strict';
-    angular.module('onyxCommon',[]);
+    angular.module('onyxCommon', []);
 })();
